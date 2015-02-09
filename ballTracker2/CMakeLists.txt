@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( ballTracker2 )
+find_package( OpenCV )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( ballTracker2 ballTracker2.cpp )
+target_link_libraries( ballTracker2 ${OpenCV_LIBS} )
